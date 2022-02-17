@@ -1,0 +1,36 @@
+{
+  "name": "mbt-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "http-server app/ -p 3000 -c-1",
+    "watch": "nodemon --watch app -e js,css,html --exec 'npm start'",
+    "test": "playwright test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.19.1",
+    "@xstate/test": "^0.5.1",
+    "http-server": "^14.1.0",
+    "nodemon": "^2.0.15",
+    "playwright": "^1.19.1",
+    "xstate": "^4.30.1"
+  }
+}
